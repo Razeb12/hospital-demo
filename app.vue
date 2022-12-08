@@ -18,10 +18,10 @@
 			</div>
 		</main>
 		<footer class="mx-auto w-full max-w-7xl flex-shrink-0 px-4 sm:px-6 lg:px-8">
-			<nav class="flex justify-center space-x-4">
-				<a href="tel:+2348166593030" class="text-sm font-medium text-gray-500 hover:text-gray-600">Contact Support</a>
+			<nav class="flex flex-col lg:flex-row justify-center lg:space-x-4">
+				<a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-600">Contact Support</a>
 				<span class="inline-block border-l border-gray-300" aria-hidden="true" />
-				<a href="#" class="text-sm font-medium text-[#4DA9EA] hover:text-gray-600">{{phone}}</a>
+				<a href="tel:+2348166593030"  class="text-sm font-medium text-[#4DA9EA] hover:text-gray-600">{{phone}}</a>
 				<span class="inline-block border-l border-gray-300" aria-hidden="true" />
 				<a href="mailto:info@gynescope.com" class="text-sm font-medium text-[#4DA9EA] hover:text-gray-600">{{email}}</a>
 			</nav>
