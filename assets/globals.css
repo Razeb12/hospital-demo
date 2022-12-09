@@ -1,0 +1,19 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.themeColor {
+    background-color: #4DA9EA;
+}
+
+.themeText {
+    color: #4DA9EA
+}
+
+.custom-img {
+  height: 100%;
+  background-image: url("/background.jpeg");
+}
