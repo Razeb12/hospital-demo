@@ -8,7 +8,7 @@
       </div>
       <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">About Us</h1>
-        <p class="mt-6 max-w-3xl text-xl text-indigo-100">Get answers to some of our most asked questions.</p>
+        <p class="mt-6 max-w-3xl text-xl text-indigo-100">Get to know us.</p>
       </div>
     </div>
     <div class="bg-gray-50 py-20 sm:py-24 lg:py-32">
