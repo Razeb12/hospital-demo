@@ -2,6 +2,7 @@
 	<div>
 		<Banner />
 		<Navbar />
-		<NuxtPage/>
+		<NuxtPage />
+    <Footer/>
 	</div>
 </template>
