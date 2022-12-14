@@ -1,20 +1,41 @@
 <template>
   <div>
-    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+    <div class="relative h-64 bg-sky-800">
+      <div class="absolute inset-0">
+        <img class="h-full w-full object-cover" src="https://babymigo.com/public/uploads/Wojre0qDCtJ4_resized.png" alt />
+        <div class="absolute inset-0 bg-sky-800 mix-blend-multiply" aria-hidden="true" />
+      </div>
+      <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-18 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Our Services</h1>
+        <!-- <p class="mt-6 max-w-3xl text-xl text-indigo-100">Get to know us.</p> -->
+      </div>
+    </div>
+    <div class="relative bg-gray-50 py-16 sm:py-24 lg:py-18">
       <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 class="text-lg font-semibold text-cyan-600">Deploy faster</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your
-          app</p>
-        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean
-          nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
-        <div class="mt-12">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <h2 class="text-lg font-semibold text-cyan-600">What We Offer</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to know about
+          our services</p>
+        <p class="mx-auto mt-5 max-w-full text-xl text-gray-500">Our fertility services range from counseling and
+          consultation to pre-implantation genetic testing and screening, to
+          helping couples with the fertility preservation methods most suited to them. Should you need a reproductive
+          surgery, our
+          specialists will guide you through the process, explaining to you the different procedures you might require,
+          and
+          develop a treatment plan that is tailored to your specific requirements.
+
+          In general, we encourage you to come along with your partner at the initial consultation and bring along
+          copies of your
+          previous test results. Couples with congenital absence of the uterus or anatomic or physiologic malformations
+          of the
+          reproductive tract might require surrogacy.</p>
+        <div class="mt-12 ">
+          <div class="grid place-self-auto   grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
             <div v-for="feature in features" :key="feature.name" class="pt-6">
-              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+              <div class="flow-root rounded-lg bg-gray-100 px-6 pb-8">
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg">
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-sky-600 p-3 shadow-lg">
                       <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
@@ -43,7 +64,20 @@ import {
   XMarkIcon,
 } from '@heroicons/vue/24/outline'
 import { ArrowTopRightOnSquareIcon, ChevronRightIcon } from '@heroicons/vue/20/solid'
-
+useHead({
+  title: "Our Services",
+  meta: [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Our fertility services range from counseling and consultation to pre- implantation genetic....."
+    }
+  ],
+  link: [{ rel: "icon", type: "img/x-icon", href: "/favicon.ico" }]
+});
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
@@ -52,36 +86,36 @@ const navigation = [
 ]
 const features = [
   {
-    name: 'Push to Deploy',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL Certificates',
-    description: 'Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple Queues',
-    description: 'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.',
-    icon: ArrowPathIcon,
-  },
-  {
-    name: 'Advanced Security',
-    description: 'Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.',
+    name: 'Fertility Treatments',
+    description: 'A wide range of fertility treatments is available at Gynescope. A treatment plan is chosen to meet your need after initial consultation.',
     icon: ShieldCheckIcon,
   },
   {
-    name: 'Powerful API',
-    description:
-      'Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.',
-    icon: CogIcon,
+    name: 'Donor Treatments',
+    description: 'Women who as a result of age, disease or onset of ovarian failure are unable to produce fertilizable eggs have lower chances of getting pregnant and might need egg donation from a much younger woman to increase the chances of conception.',
+    icon: ShieldCheckIcon,
   },
   {
-    name: 'Database Backups',
-    description: 'Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.',
-    icon: ServerIcon,
+    name: 'Fertility Preservation',
+    description: 'Apart from clinical and laboratory testing, couples who require IVF/ICSI will need to undergo hormonal analysis. This is best done during menstruation.',
+    icon: ShieldCheckIcon,
   },
+  {
+    name: 'Minimal Access Surgery',
+    description: 'This includes both hysteroscopic and laparoscopic surgeries, for treating defects in the womb, removing fibroids, adhesions and fetal bones from a previous late abortion. Both surgeries require the insertion of a telescope-like instrument into the vagina and umbilicus respectively.',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: '24/7 Support',
+    description:
+      'Apart from clinical and laboratory testing, couples who require IVF/ICSI will need to undergo hormonal analysis. This is best done during menstruation.',
+    icon: ShieldCheckIcon,
+  },
+  // {
+  //   name: 'Database Backups',
+  //   description: 'Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.',
+  //   icon: ServerIcon,
+  // },
 ]
 const blogPosts = [
   {

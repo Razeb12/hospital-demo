@@ -1,5 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
-  css: ["@/assets/globals.css"]
+  css: ["@/assets/globals.css"],
+  sitemap: {
+    hostname: "localhost:3000",
+    trailingSlash: true
+  },
+
+  // tell web crawlers where to crawl
+  robots: {
+    UserAgent: "*",
+
+    Disallow: () => ["/thanks/", "/200.html", "/README.md"],
+
+    Sitemap: "https://localhost:3000/sitemap.xml"
+  }
 });

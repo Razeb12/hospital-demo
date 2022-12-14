@@ -1,12 +1,12 @@
 <template>
   <div class="bg-gray-50">
-    <div class="relative bg-sky-800">
+    <div class="relative h-64 bg-sky-800">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover" src="https://cdn.vanguardngr.com/wp-content/uploads/2013/07/Badejo.jpg"
+        <img class="h-full w-full object-cover" src="https://babymigo.com/public/uploads/Wojre0qDCtJ4_resized.png"
           alt />
         <div class="absolute inset-0 bg-sky-800 mix-blend-multiply" aria-hidden="true" />
       </div>
-      <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-18 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">About Us</h1>
         <p class="mt-6 max-w-3xl text-xl text-indigo-100">Get to know us.</p>
       </div>
@@ -94,13 +94,53 @@
         </div>
       </div>
     </section>
-    <section class="bg-gray-50 lg:pt-24 mx-auto max-w-6xl px-4 lg:px-8">
+    <section class="bg-gray-50 pt-16 lg:py-24">
+      <div class="bg-sky-600 pb-16 lg:relative lg:z-10 lg:pb-0">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+          <div class="relative lg:-my-8">
+            <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />
+            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
+              <div
+                class="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                <img class="object-cover lg:h-full lg:w-full"
+                  src="https://media-exp1.licdn.com/dms/image/C4D03AQEXj8uH2sVBtA/profile-displayphoto-shrink_800_800/0/1658778564317?e=2147483647&v=beta&t=Wa8Dyfvoa8Pqx1To6J1kQpXMsrCJn2k2fGmcECEUI8M"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+              <blockquote>
+                <div>
+                  <svg class="h-12 w-12 text-white opacity-25" fill="currentColor" viewBox="0 0 32 32"
+                    aria-hidden="true">
+                    <path
+                      d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                  </svg>
+                  <p class="mt-6 text-base font-medium text-white">Jude Okohue is a Professor of obstetrics and
+                    gynaecology. He is currently the Vice President of the Association of
+                    Gynaecological Endoscopy Surgeons (AGES) Nigerial and Board member, American Association of
+                    Gynecologic Laparoscopists
+                    (AAGL) Hysteroscopy SIG. Prof. Okohue has been invited as faculty at numerous international
+                    conferences and workshops.</p>
+                </div>
+                <footer class="mt-6">
+                  <p class="text-base font-medium text-white">Prof. Jude Okohue</p>
+                  <p class="text-base font-medium text-indigo-100">CEO at Gynescope Specialist Hospital</p>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-50  mx-auto max-w-6xl px-4 lg:px-8">
       <h2 class="text-4xl text-center z-20 mb-20 themeText relative mt-12 font-black tracking-tight sm:text-6xl">Our
         Statistics</h2>
       <p class="-mt-12 max-w-3xl lg:-mt-12 text-center mx-auto text-xl text-black">At Gynescope Specialist Hospital, we
         have exceptionally high pregnancy success rates. Below is the approximate 2016/17 clinical pregnancy rates (%)
         per fresh embryo transfer. (Jan 2016 – April 2017)</p>
-      <div class="mt-10 bg-white pb-12 sm:pb-16">
+      <div class="mt-10 bg-sky-600 pb-12 sm:pb-16">
         <div class="relative">
           <div class="absolute inset-0 h-1/2 bg-gray-50" />
           <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

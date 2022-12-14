@@ -3,6 +3,11 @@
 * {
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
+ 
+}
+
+body {
+   background-color:  rgb(249 250 251) ;
 }
 
 .themeColor {
