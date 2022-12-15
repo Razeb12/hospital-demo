@@ -1,5 +1,5 @@
 <template>
-	<section class="relative sm:-mt-24 z-40">
+	<section class="relative sm:-mt-24 z-10">
 		<div class="mx-auto max-w-6xl">
 			<dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
 				<div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">

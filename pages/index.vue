@@ -25,6 +25,38 @@ useHead({
 			name: "description",
 			content:
 				"We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals, with optimal success rates in a congenial."
+		},
+		{
+			hid: "og:type", // open graph type
+			property: "og:type",
+			content: "website"
+		},
+		{
+			hid: "apple-mobile-web-app-title", // Gynescope Specialist Hospital mobile web app title
+			name: "apple-mobile-web-app-title",
+			content: "Gynescope Specialist Hospital"
+		},
+		{
+			hid: "og:title", // Gynescope Specialist Hospital title
+			property: "og:title",
+			content: "Gynescope Specialist Hospital "
+		},
+		{
+			hid: "og:description", // Gynescope Specialist Hospital description
+			property: "og:description",
+			content:
+				"We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals."
+		},
+		{
+			hid: "og:url", // Gynescope Specialist Hospital url
+			property: "og:url",
+			content: "https://gynescope.com.ng"
+		},
+		{
+			hid: "og:image", // Gynescope Specialist Hospital image
+			property: "og:image",
+			content:
+				"https://d33wubrfki0l68.cloudfront.net/f602ffaa7d56bbd9f27db7a08a0a7068462149e3/143f6/_nuxt/img/f9c805f.png"
 		}
 	],
 	link: [{ rel: "icon", type: "img/x-icon", href: "/favicon.ico" }]

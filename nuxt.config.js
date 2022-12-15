@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/robots"],
   css: ["@/assets/globals.css"],
   sitemap: {
-    hostname: "https://gynescope-website.vercel.app",
+    hostname: "https://gynescope.com.ng",
     trailingSlash: true
   },
 
@@ -13,6 +13,6 @@ export default defineNuxtConfig({
 
     Disallow: () => ["/thanks/", "/200.html", "/README.md"],
 
-    Sitemap: "https://gynescope-website.vercel.app/sitemap.xml"
+    Sitemap: "https://gynescope.com.ng/sitemap.xml"
   }
 });
