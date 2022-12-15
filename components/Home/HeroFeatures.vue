@@ -38,7 +38,7 @@ import {
 	LockClosedIcon,
 	ServerIcon,
 	ShieldCheckIcon
-} from "@heroicons/vue/24/outline";
+} from "@heroicons/vue/24/outline/index.js";
 import icon from "/icon.png";
 import icon1 from "/icons1.png";
 const features = [

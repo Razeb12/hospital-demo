@@ -164,7 +164,7 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon
-} from "@heroicons/vue/24/outline";
+} from "@heroicons/vue/24/outline/index.js";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 import logo from "/logo1.png";
 
