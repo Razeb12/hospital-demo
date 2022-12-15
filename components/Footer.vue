@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { defineComponent, h } from 'vue'
+// import { defineComponent, h } from 'vue'
 import logo from "/white.png";
 const navigation = {
   main: [
