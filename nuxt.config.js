@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/robots"],
   css: ["@/assets/globals.css"],
+  build: {
+    transpile: ['@heroicons/vue']
+},
   sitemap: {
     hostname: "https://gynescope.com.ng",
     trailingSlash: true
