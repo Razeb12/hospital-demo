@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     hostname: "https://gynescope.com.ng",
     trailingSlash: true
   },
-
+  target: "static",
   // tell web crawlers where to crawl
   robots: {
     UserAgent: "*",
