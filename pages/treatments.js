@@ -1,5 +1,6 @@
 import React from "react";
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
+import Head from "next/head";
 const blogPosts = [
   {
     id: 1,
@@ -45,29 +46,37 @@ const blogPosts = [
   },
 ];
 export default function Treatments() {
-  return (
-    <div className="bg-gray-50 py-32">
+  return <div className="bg-gray-50 py-32">
+      <Head>
+        <title>Our Treatments</title>
+        <meta name="description" content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals, with optimal success rates in a congenial." />
+        <meta hid="og:type" property="og:type" content="website" />
+        <meta hid="apple-mobile-web-app-title" property="apple-mobile-web-app-title" content="Gynescope Specialist Hospital" />
+        <meta hid="og:title" property="og:title" content="Gynescope Specialist Hospital" />
+        <meta hid="og:description" property="og:description" content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals." />
+        <meta hid="og:url" property="og:url" content="https://gynescope.com.ng" />
+        {/* <meta
+          hid="og:image"
+          property="og:image"
+          content="https://d33wubrfki0l68.cloudfront.net/f602ffaa7d56bbd9f27db7a08a0a7068462149e3/143f6/_nuxt/img/f9c805f.png"
+        /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="relative h-96 bg-sky-800">
         <div className="absolute inset-0">
-          <img
-            className="h-full w-full object-cover"
-            src="https://cdn.vanguardngr.com/wp-content/uploads/2013/07/Badejo.jpg"
-            alt=""
-          />
-          <div
-            className="absolute inset-0 bg-sky-800 mix-blend-multiply"
-            aria-hidden="true"
-          />
+          <img className="h-full w-full object-cover" src="https://cdn.vanguardngr.com/wp-content/uploads/2013/07/Badejo.jpg" alt="" />
+          <div className="absolute inset-0 bg-sky-800 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Our Treatments
           </h1>
           <p className="mt-6 max-w-3xl text-xl text-indigo-100">
-            At Gynescope, we simplify the entire treatment process, making it as
-            stress-free and seamless as possible. Your journey starts with an
-            initial consultation and diagnosis, followed by a treatment plan
-            that will be tailored to your unique situation.
+            At Gynescope, we simplify the entire treatment process, making it
+            as stress-free and seamless as possible. Your journey starts with
+            an initial consultation and diagnosis, followed by a treatment
+            plan that will be tailored to your unique situation.
           </p>
         </div>
       </div>
@@ -75,22 +84,13 @@ export default function Treatments() {
       <section className="mx-auto md:-mt-32 z-20 relative max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mt-12">
           <div className="grid place-self-auto grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map(feature => 
-              <div key={feature.id} className="pt-6">
+            {blogPosts.map(feature => <div key={feature.id} className="pt-6">
                 <div className="flow-root rounded-lg bg-gray-100 px-6 pb-8">
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-sky-600 p-3 shadow-lg">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          className="w-6 h-6 text-white">
-                          <path
-                            fill-rule="evenodd"
-                            d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                            clip-rule="evenodd"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white">
+                          <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
                         </svg>
 
                         {/* <!-- <component :is="feature.icon" className="h-6 w-6 text-white" aria-hidden="true" /> --> */}
@@ -104,11 +104,9 @@ export default function Treatments() {
                     </p>
                   </div>
                 </div>
-              </div>
-            )}
+              </div>)}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 }

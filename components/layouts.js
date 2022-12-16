@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "./banner";
+import Footer from "./footer";
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
       <main className="-mt-36 min-w-screen-full">
         {children}
       </main>
+      <Footer/>
     </div>
   );
 }

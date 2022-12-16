@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 
 const features = [
@@ -33,19 +34,27 @@ const features = [
   // },
 ];
 export default function Services() {
-  return (
-    <div classNameName="py-32">
+  return <div classNameName="py-32">
+      <Head>
+        <title>Our Services</title>
+        <meta name="description" content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals, with optimal success rates in a congenial." />
+        <meta hid="og:type" property="og:type" content="website" />
+        <meta hid="apple-mobile-web-app-title" property="apple-mobile-web-app-title" content="Gynescope Specialist Hospital" />
+        <meta hid="og:title" property="og:title" content="Gynescope Specialist Hospital" />
+        <meta hid="og:description" property="og:description" content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals." />
+        <meta hid="og:url" property="og:url" content="https://gynescope.com.ng" />
+        {/* <meta
+          hid="og:image"
+          property="og:image"
+          content="https://d33wubrfki0l68.cloudfront.net/f602ffaa7d56bbd9f27db7a08a0a7068462149e3/143f6/_nuxt/img/f9c805f.png"
+        /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="relative h-64  bg-sky-800">
         <div className="absolute inset-0">
-          <img
-            className="h-full w-full object-cover"
-            src="https://babymigo.com/public/uploads/Wojre0qDCtJ4_resized.png"
-            alt
-          />
-          <div
-            className="absolute inset-0 bg-sky-800 mix-blend-multiply"
-            aria-hidden="true"
-          />
+          <img className="h-full w-full object-cover" src="https://babymigo.com/public/uploads/Wojre0qDCtJ4_resized.png" alt />
+          <div className="absolute inset-0 bg-sky-800 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-18 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -56,22 +65,24 @@ export default function Services() {
       </div>
       <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-18">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-lg font-semibold text-cyan-600">What We Offer</h2>
+          <h2 className="text-lg font-semibold text-cyan-600">
+            What We Offer
+          </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Everything you need to know about our services
           </p>
           <p className="md:mx-auto text-justify mt-5 max-w-full text-xl text-gray-500">
             Our fertility services range from counseling and consultation to
             pre-implantation genetic testing and screening, to helping couples
-            with the fertility preservation methods most suited to them. Should
-            you need a reproductive surgery, our specialists will guide you
-            through the process, explaining to you the different procedures you
-            might require, and develop a treatment plan that is tailored to your
-            specific requirements. In general, we encourage you to come along
-            with your partner at the initial consultation and bring along copies
-            of your previous test results. Couples with congenital absence of
-            the uterus or anatomic or physiologic malformations of the
-            reproductive tract might require surrogacy.
+            with the fertility preservation methods most suited to them.
+            Should you need a reproductive surgery, our specialists will guide
+            you through the process, explaining to you the different
+            procedures you might require, and develop a treatment plan that is
+            tailored to your specific requirements. In general, we encourage
+            you to come along with your partner at the initial consultation
+            and bring along copies of your previous test results. Couples with
+            congenital absence of the uterus or anatomic or physiologic
+            malformations of the reproductive tract might require surrogacy.
           </p>
           <div className="mt-12">
             <div className="grid place-self-auto grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -108,6 +119,5 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }

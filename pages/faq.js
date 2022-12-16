@@ -8,6 +8,7 @@ import {
   ChevronDownIcon,
   ChevronUpDownIcon,
 } from "@heroicons/react/24/outline";
+import Head from "next/head";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -78,6 +79,41 @@ const faqs = [
 export default function FAQ() {
   return (
     <div>
+        <Head>
+        <title>FAQ</title>
+        <meta
+          name="description"
+          content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals, with optimal success rates in a congenial."
+        />
+        <meta hid="og:type" property="og:type" content="website" />
+        <meta
+          hid="apple-mobile-web-app-title"
+          property="apple-mobile-web-app-title"
+          content="Gynescope Specialist Hospital"
+        />
+        <meta
+          hid="og:title"
+          property="og:title"
+          content="Gynescope Specialist Hospital"
+        />
+        <meta
+          hid="og:description"
+          property="og:description"
+          content="We provide Assistance in state-of-the-art Reproductive Technology and experienced team of professionals."
+        />
+        <meta
+          hid="og:url"
+          property="og:url"
+          content="https://gynescope.com.ng"
+        />
+        {/* <meta
+          hid="og:image"
+          property="og:image"
+          content="https://d33wubrfki0l68.cloudfront.net/f602ffaa7d56bbd9f27db7a08a0a7068462149e3/143f6/_nuxt/img/f9c805f.png"
+        /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div class="relative bg-sky-800 py-48 md:py-48">
         <div class="absolute inset-0">
           <img
