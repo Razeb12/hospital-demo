@@ -12,7 +12,7 @@ import {
   Mousewheel,
   Keyboard,
   Autoplay,
-  EffectCoverflow,
+  EffectCoverflow
 } from "swiper";
 export default function HomeBabies() {
   return (
@@ -25,14 +25,19 @@ export default function HomeBabies() {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
+
         autoplay={{ delay: 10000, disableOnInteraction: false }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: true
+        }}
+        breakpoints={{
+          640: { slidesPerView: 1, spaceBetween: 20 },
+          768: { slidesPerView: 2, spaceBetween: 40 },
+          1024: { slidesPerView: 3, spaceBetween: 50 }
         }}
         pagination={true}
         modules={[Pagination, Autoplay, EffectCoverflow]}>
