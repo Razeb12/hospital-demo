@@ -228,16 +228,16 @@ export default function About() {
         <div className="bg-sky-600 pb-16 lg:relative lg:z-10 lg:pb-0">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
             <div className="relative lg:-my-8">
-              <div
+              {/* <div
                 aria-hidden="true"
                 className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
-              />
+              /> */}
               <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                 <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                   <img
                     className="object-cover lg:h-full lg:w-full"
                     src="https://media-exp1.licdn.com/dms/image/C4D03AQEXj8uH2sVBtA/profile-displayphoto-shrink_800_800/0/1658778564317?e=2147483647&v=beta&t=Wa8Dyfvoa8Pqx1To6J1kQpXMsrCJn2k2fGmcECEUI8M"
-                    alt=""
+                    alt="MD profile"
                   />
                 </div>
               </div>
