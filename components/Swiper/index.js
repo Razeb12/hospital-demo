@@ -41,8 +41,8 @@ export default function Carousel() {
                         Take Care Of Your Health
                       </h1>
                       <p className="mt-6 text-lg leading-8 text-white sm:text-center">
-                        At Medina, we are dedicated to diagnosing all kinds of
-                        diseases
+                        At Gynescope, we are dedicated to diagnosing all kinds of
+                        fertility problems.
                       </p>
                       <div className="mt-8 flex gap-x-4 justify-center">
                         <button className="inline-block rounded-xl bg-white px-4 py-1.5 text-base font-semibold leading-7 text-black hover:text-white shadow-sm ring-1  hover:bg-cyan-500">
